@@ -1,5 +1,5 @@
 import sys
-from validator import Validator
+from validator_stack import Validator
 
 
 if __name__ == "__main__":  
