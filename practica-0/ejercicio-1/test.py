@@ -1,5 +1,6 @@
 from validator_stack import Validator
-f = open("input.txt", "r")
-for x in f:
-    validator = Validator(x)
-    print(validator.isValidText())
+file = open("input.txt", "r")
+for line in file:
+    clean_line = line.replace("\n","")
+    validator = Validator(clean_line)
+    print(clean_line, "=>",validator.isValidText())
