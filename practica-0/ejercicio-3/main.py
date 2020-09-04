@@ -1,6 +1,5 @@
 import re
 # P = U * I
-
 class Resolver:
     cases = {
         "P": {
@@ -24,7 +23,6 @@ class Resolver:
         return 1
 
     def extractValue(self, key):
-        print("self.cases", self.cases[key]["reg"])
         result = re.search(self.cases[key]["reg"], self.line)
         if(result):
             return result.group()
@@ -36,15 +34,10 @@ class Resolver:
         I = self.extractValue("I")
 
         if(P != None and U != None):
-            print("I")
             return self.cleanValue(P) / self.cleanValue(U)
         if(P != None and I != None):
-            print("U")
             return self.cleanValue(P) / self.cleanValue(I)
         if(U != None and I != None):
-            print("U", U)
-            print("I", I)
-            print("P")
             return self.cleanValue(U) * self.cleanValue(I)
         return 0
 
