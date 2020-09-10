@@ -1,4 +1,4 @@
-## Ex 1
+## Ex 2
 ```
 python3 main.py hola=2 #False
 python3 main.py 2_hola=2 #True
