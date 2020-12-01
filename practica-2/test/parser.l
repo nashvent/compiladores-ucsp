@@ -1,6 +1,19 @@
-digito [0-9]
-entero {digito}+
-real {entero}\.{entero}
+line (\n)
+time (\[.+\])
+author (\].+\:)
+message (:\s.+\n)
 %%
-{entero} { printf("TOKEN: [%s] ENTERO", yytext); }
-{real} { printf("TOKEN: [%s] ENTERO", yytext); }
+
+{line} { printf("%s \\\\ \\hline ", yytext); }
+{author} { printf("XXXXX"); }
+{time} { printf(" %s &", yytext); }
+{message} { printf(" & %s ", yytext); }
+
+%%
+
+int main() {
+    printf("\n\\begin{tabular}{|c|p{3cm}|p{8cm}|p{2cm}|} \n");
+    printf("\\\\ \\hline ");
+    yylex();
+    printf("\n\\end{tabular} \n");
+}

@@ -1,10 +1,8 @@
-TOKEN: [1] ENTERO
-armando
-TOKEN: [2] ENTERO
-belinda
-TOKEN: [3] ENTERO
-carlos
-TOKEN: [4] ENTERO
-dora
-TOKEN: [5] ENTERO
-esteban
+
+\begin{tabular}{|c|p{3cm}|p{8cm}|p{2cm}|} 
+\\ \hline  [5:57 p. m., 9/9/2020] & Carlos EAT: Feliz cumpleaños Edward!
+ \\ \hline  [6:55 p. m., 9/9/2020] & Edward H: Hola Carlos, muchas gracias =D
+ \\ \hline  [6:57 p. m., 9/9/2020] & Carlos EAT: Espero que la pases bien
+ \\ \hline  [10:02 p. m., 9/9/2020] & Edward H: Si mi esposa hizo una torta de chocolate, saludos
+ \\ \hline 
+\end{tabular} 
